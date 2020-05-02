@@ -8,5 +8,5 @@
 	<h2> DRINK COFFEE</h2>
 	<h3> DRINK MILK SHAKES </h3>
 
-	<h4> I am learning ALOT!!</h4>
+	<h4> I am learning ALOT!</h4>
 
