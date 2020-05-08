@@ -55,12 +55,12 @@
 
 1. Create kubernetes cluster definitions on S3 bucket
    ```sh
-   kops create cluster --cloud=aws --zones=ap-south-1b --name=demo.k8s.valaxy.net --dns-zone=valaxy.net --dns private 
+   kops create cluster --cloud=aws --zones=us-east-1d --name=demo.k8.mbaclassesonline.com --dns-zone=valaxy.net --dns private 
     ```
 
 1. Create kubernetes cluser
     ```sh
-    kops update cluster demo.k8s.valaxy.net --yes
+    kops update cluster demo.k8.mbaclassesonline.com --yes
     ```
 
 1. Validate your cluster
@@ -71,6 +71,23 @@
 1. To list nodes
    ```sh
    kubectl get nodes
+   ```
+
+1. To edit cluster nodes
+   ```sh
+   kops edit ig --name=demo.k8.mbaclassesonline.com nodes
+   ```
+   
+1. To edit master node
+   ```sh
+    kops edit ig --name=demo.k8.mbaclassesonline.com master-us-east-1d
+   ```
+   
+1. TO roll an update in the cluster when is already running
+   ```sh
+    kops update cluster --name demo.k8.mbaclassesonline.com --yes
+    kops rolling-update cluster
+    kops rolling-update cluster --cloudonly --yes
    ```
 
 1. To delete cluster
