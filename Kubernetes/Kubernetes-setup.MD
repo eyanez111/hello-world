@@ -55,7 +55,7 @@
 
 1. Create kubernetes cluster definitions on S3 bucket
    ```sh
-   kops create cluster --cloud=aws --zones=us-east-1d --name=demo.k8.mbaclassesonline.com --dns-zone=valaxy.net --dns private 
+   kops create cluster --cloud=aws --zones=us-east-1d --name=demo.k8.mbaclassesonline.com --dns-zone=mbaonlineclasses.com --dns private 
     ```
 
 1. Create kubernetes cluser
@@ -92,7 +92,7 @@
 
 1. To delete cluster
     ```sh
-     kops delete cluster demo.k8s.valaxy.net --yes
+     kops delete cluster demo.k8.mbaclassesonline.com --yes
     ```
    
 #### Deploying Nginx pods on Kubernetes
