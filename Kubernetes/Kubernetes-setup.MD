@@ -90,6 +90,11 @@
     kops rolling-update cluster --cloudonly --yes
    ```
 
+1. login to master node 
+    ```sh
+     ssh -i ~/.ssh/id_rsa admin@api.demo.k8.mbaclassesonline.com
+    ```   
+
 1. To delete cluster
     ```sh
      kops delete cluster demo.k8.mbaclassesonline.com --yes
