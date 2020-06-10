@@ -10,8 +10,6 @@
 
         <h3> I LOVE DEVOPS</h3>
 
-<h1> This is a nother test!! </h1>
-
 	<h4> Now in Slack and using kuberbetes!</h4>
 
 
